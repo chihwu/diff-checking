@@ -1,0 +1,121 @@
+uuid: 6df72af4-ce1c-4150-a817-b59603943c36
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.home_office1.field_homeofficel1
+    - field.field.node.home_office1.field_homeofficer1
+    - field.field.node.home_office1.field_homeofficet1
+    - node.type.home_office1
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          385c293b-a772-4426-9d08-479c15f48d5d:
+            uuid: 385c293b-a772-4426-9d08-479c15f48d5d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:home_office1:field_homeofficel1'
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          56578689-87a6-498f-8928-2b2bbc4872cf:
+            uuid: 56578689-87a6-498f-8928-2b2bbc4872cf
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:home_office1:field_homeofficer1'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          fd2dd70b-e75a-4edf-b6c3-6c7893890260:
+            uuid: fd2dd70b-e75a-4edf-b6c3-6c7893890260
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:home_office1:field_homeofficet1'
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          18bf3731-d1dd-4081-9fbe-8455b89c8661:
+            uuid: 18bf3731-d1dd-4081-9fbe-8455b89c8661
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:home_office1:links'
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+id: node.home_office1.teaser
+targetEntityType: node
+bundle: home_office1
+mode: teaser
+content:
+  field_homeofficel1:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_homeofficer1:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_homeofficet1:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

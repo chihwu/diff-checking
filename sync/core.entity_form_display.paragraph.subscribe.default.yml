@@ -1,0 +1,44 @@
+uuid: 39645f6d-4c7f-4bcb-82cd-7c50849ea914
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.subscribe.field_content
+    - field.field.paragraph.subscribe.field_sub_content
+    - field.field.paragraph.subscribe.field_subscribe_action_button
+    - paragraphs.paragraphs_type.subscribe
+  module:
+    - link
+    - text
+id: paragraph.subscribe.default
+targetEntityType: paragraph
+bundle: subscribe
+mode: default
+content:
+  field_content:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_sub_content:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_subscribe_action_button:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true

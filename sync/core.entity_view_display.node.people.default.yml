@@ -1,0 +1,30 @@
+uuid: b8c15cd1-1b6d-4de1-a875-f9f79d41af00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.people.field_picture
+    - node.type.people
+  module:
+    - image
+    - user
+id: node.people.default
+targetEntityType: node
+bundle: people
+mode: default
+content:
+  field_picture:
+    weight: 103
+    label: visually_hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

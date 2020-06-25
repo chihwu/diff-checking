@@ -1,0 +1,49 @@
+uuid: 7b444146-8e93-4d5b-831c-2cebf6c6d58e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.resource.field_featured
+    - field.field.node.resource.field_resources
+    - node.type.resource
+  module:
+    - paragraphs
+id: node.resource.default
+targetEntityType: node
+bundle: resource
+mode: default
+content:
+  field_featured:
+    weight: 26
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_resources:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

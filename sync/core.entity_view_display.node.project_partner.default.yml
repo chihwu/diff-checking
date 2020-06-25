@@ -1,0 +1,33 @@
+uuid: 9dcb6596-69ca-445f-a019-4eb0e041e0c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project_partner.field_link
+    - node.type.project_partner
+  module:
+    - link
+    - user
+id: node.project_partner.default
+targetEntityType: node
+bundle: project_partner
+mode: default
+content:
+  field_link:
+    weight: 101
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

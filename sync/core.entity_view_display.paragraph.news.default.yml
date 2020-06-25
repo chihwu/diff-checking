@@ -1,0 +1,73 @@
+uuid: 1d2eb275-42db-40d4-93fe-5bc6ea881927
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news.field_news_summary
+    - field.field.paragraph.news.field_news_title
+    - paragraphs.paragraphs_type.news
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          7cd6a07c-94a8-4515-861d-7c7881eabfb7:
+            uuid: 7cd6a07c-94a8-4515-861d-7c7881eabfb7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:news:field_news_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          c706e99c-9225-42f4-a012-23c892cab7f9:
+            uuid: c706e99c-9225-42f4-a012-23c892cab7f9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:news:field_news_summary'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: paragraph.news.default
+targetEntityType: paragraph
+bundle: news
+mode: default
+content:
+  field_news_summary:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_news_title:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

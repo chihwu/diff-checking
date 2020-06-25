@@ -1,0 +1,21 @@
+uuid: c112c805-14c6-4b4b-bbb1-40eb22e2139f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_story_sub_title
+    - paragraphs.paragraphs_type.stories_details
+  module:
+    - text
+id: paragraph.stories_details.field_story_sub_title
+field_name: field_story_sub_title
+entity_type: paragraph
+bundle: stories_details
+label: 'Story Sub-title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

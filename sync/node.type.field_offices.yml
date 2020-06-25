@@ -1,0 +1,18 @@
+uuid: 86de4079-2d76-482b-887c-ec00d5f3cb57
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Field Offices'
+type: field_offices
+description: "Field Offices\r\n"
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

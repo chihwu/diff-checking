@@ -1,0 +1,23 @@
+uuid: 7ced258c-d663-4ad2-88d8-9935dcb77cc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: paragraph.text.field_block
+field_name: field_block
+entity_type: paragraph
+bundle: text
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings: {  }
+field_type: entity_reference_revisions

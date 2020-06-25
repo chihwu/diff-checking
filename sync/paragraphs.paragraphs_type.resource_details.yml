@@ -1,0 +1,10 @@
+uuid: 6ec7c919-938c-4f33-bdeb-12a465b7e82c
+langcode: en
+status: true
+dependencies: {  }
+id: resource_details
+label: 'Resource details'
+icon_uuid: null
+icon_default: null
+description: 'This layout is used only for Featured resources details page'
+behavior_plugins: {  }

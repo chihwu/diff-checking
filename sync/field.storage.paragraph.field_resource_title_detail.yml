@@ -1,0 +1,20 @@
+uuid: 2f7aebb6-8697-43da-8dc7-dfb4c4829193
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_resource_title_detail
+field_name: field_resource_title_detail
+entity_type: paragraph
+type: text
+settings:
+  max_length: 1000
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

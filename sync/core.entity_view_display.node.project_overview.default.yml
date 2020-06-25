@@ -1,0 +1,65 @@
+uuid: 637322ca-a793-4821-8928-de7caa29cf49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project_overview.body
+    - node.type.project_overview
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d655a889-e428-4219-a836-c335b6fbba5e:
+            uuid: d655a889-e428-4219-a836-c335b6fbba5e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:project_overview:links'
+            additional: {  }
+            weight: 0
+          6555329b-7a3b-42fe-b1a2-2eec3e204366:
+            uuid: 6555329b-7a3b-42fe-b1a2-2eec3e204366
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:project_overview:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: node.project_overview.default
+targetEntityType: node
+bundle: project_overview
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

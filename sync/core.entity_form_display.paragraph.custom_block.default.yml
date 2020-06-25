@@ -1,0 +1,25 @@
+uuid: 927923ab-0a5e-4e30-996a-25f2c6b2d1a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_block.field_custom_block
+    - paragraphs.paragraphs_type.custom_block
+id: paragraph.custom_block.default
+targetEntityType: paragraph
+bundle: custom_block
+mode: default
+content:
+  field_custom_block:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,21 @@
+uuid: 0f22ab55-0903-4cd6-a555-167cb60907eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.layout_builder__layout
+    - paragraphs.paragraphs_type.one_column
+  module:
+    - layout_builder
+id: paragraph.one_column.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: paragraph
+bundle: one_column
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

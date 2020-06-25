@@ -1,0 +1,41 @@
+uuid: 89720c47-34d8-46dc-bc42-9a1f609325aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.add_project_objective.field_imageapo
+    - field.field.paragraph.add_project_objective.field_imageapo1
+    - field.field.paragraph.add_project_objective.layout_builder__layout
+    - paragraphs.paragraphs_type.add_project_objective
+  module:
+    - image
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: paragraph.add_project_objective.preview
+targetEntityType: paragraph
+bundle: add_project_objective
+mode: preview
+content:
+  field_imageapo:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_imageapo1:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  layout_builder__layout: true

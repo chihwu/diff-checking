@@ -1,0 +1,79 @@
+uuid: 1301c05b-695f-4192-b741-27b4b0e548cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_resources
+    - node.type.resource
+    - paragraphs.paragraphs_type.resource_layout
+  module:
+    - entity_reference_revisions
+id: node.resource.field_resources
+field_name: field_resources
+entity_type: node
+bundle: resource
+label: Resources
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      resource_layout: resource_layout
+    target_bundles_drag_drop:
+      about_project_objective:
+        weight: 18
+        enabled: false
+      add_project_objective:
+        weight: 19
+        enabled: false
+      block:
+        weight: 20
+        enabled: false
+      contact:
+        weight: 21
+        enabled: false
+      country_reports:
+        weight: 22
+        enabled: false
+      covid_19_layout:
+        weight: 23
+        enabled: false
+      custom_block:
+        weight: 24
+        enabled: false
+      events_group:
+        weight: 25
+        enabled: false
+      event_details_page_:
+        weight: 26
+        enabled: false
+      header_image:
+        weight: 27
+        enabled: false
+      news:
+        weight: 28
+        enabled: false
+      one_column:
+        weight: 29
+        enabled: false
+      resource_layout:
+        enabled: true
+        weight: 30
+      stories_details:
+        weight: 31
+        enabled: false
+      subscribe:
+        weight: 32
+        enabled: false
+      text:
+        weight: 33
+        enabled: false
+      view:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

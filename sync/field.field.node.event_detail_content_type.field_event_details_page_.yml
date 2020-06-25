@@ -1,0 +1,73 @@
+uuid: 88eff4a5-6e85-4faa-8da3-74701b76e6a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_details_page_
+    - node.type.event_detail_content_type
+    - paragraphs.paragraphs_type.event_details_page_
+  module:
+    - entity_reference_revisions
+id: node.event_detail_content_type.field_event_details_page_
+field_name: field_event_details_page_
+entity_type: node
+bundle: event_detail_content_type
+label: 'Event Details Page '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      event_details_page_: event_details_page_
+    target_bundles_drag_drop:
+      about_project_objective:
+        weight: 16
+        enabled: false
+      add_project_objective:
+        weight: 17
+        enabled: false
+      block:
+        weight: 18
+        enabled: false
+      contact:
+        weight: 19
+        enabled: false
+      country_reports:
+        weight: 20
+        enabled: false
+      covid_19_layout:
+        weight: 21
+        enabled: false
+      events_group:
+        weight: 22
+        enabled: false
+      event_details_page_:
+        enabled: true
+        weight: 23
+      header_image:
+        weight: 24
+        enabled: false
+      news:
+        weight: 25
+        enabled: false
+      one_column:
+        weight: 26
+        enabled: false
+      stories_details:
+        weight: 27
+        enabled: false
+      subscribe:
+        weight: 28
+        enabled: false
+      text:
+        weight: 29
+        enabled: false
+      view:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

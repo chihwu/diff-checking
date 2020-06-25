@@ -1,0 +1,10 @@
+uuid: bf90584a-d9eb-42c1-9f5e-5ac7f2216c1c
+langcode: en
+status: true
+dependencies: {  }
+id: country_reports
+label: 'Country Reports'
+icon_uuid: null
+icon_default: null
+description: 'This is for ''Reports'' section of each country profile'
+behavior_plugins: {  }

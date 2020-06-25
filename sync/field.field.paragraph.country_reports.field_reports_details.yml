@@ -1,0 +1,21 @@
+uuid: e1aa1359-b7ff-4b60-95cf-5c49be104843
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reports_details
+    - paragraphs.paragraphs_type.country_reports
+  module:
+    - text
+id: paragraph.country_reports.field_reports_details
+field_name: field_reports_details
+entity_type: paragraph
+bundle: country_reports
+label: 'Reports Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

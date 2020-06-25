@@ -1,0 +1,21 @@
+uuid: d4095b8b-efb0-41d2-a793-8f5b9e2d73eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event
+    - paragraphs.paragraphs_type.event_details_page_
+  module:
+    - text
+id: paragraph.event_details_page_.field_event
+field_name: field_event
+entity_type: paragraph
+bundle: event_details_page_
+label: 'Event title detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

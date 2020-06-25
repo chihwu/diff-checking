@@ -1,0 +1,43 @@
+uuid: b2ebc839-f89c-44e6-b607-0003b19e6644
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_layout.body
+    - field.field.node.news_layout.field_news
+    - node.type.news_layout
+  module:
+    - paragraphs
+id: node.news_layout.default
+targetEntityType: node
+bundle: news_layout
+mode: default
+content:
+  field_news:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

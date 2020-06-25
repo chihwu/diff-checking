@@ -1,0 +1,331 @@
+uuid: e97d4da9-38c9-46ad-99fa-3648501f2cbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.paragraph.event_details_page_.field_e
+    - field.field.paragraph.event_details_page_.field_event
+    - field.field.paragraph.event_details_page_.field_event_credits_details
+    - field.field.paragraph.event_details_page_.field_event_media_detail
+    - field.field.paragraph.event_details_page_.field_event_moderator_detail
+    - field.field.paragraph.event_details_page_.field_event_register_detail
+    - field.field.paragraph.event_details_page_.field_event_resources_detail
+    - field.field.paragraph.event_details_page_.field_event_speakers_detail
+    - field.field.paragraph.event_details_page_.field_event_summary_detail
+    - paragraphs.paragraphs_type.event_details_page_
+  module:
+    - addtoany
+    - file
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 50-50
+        components:
+          fcb2c5ec-1a1e-4aec-949c-9f74d4625ac9:
+            uuid: fcb2c5ec-1a1e-4aec-949c-9f74d4625ac9
+            region: first
+            configuration:
+              id: 'field_block:paragraph:event_details_page_:field_event'
+              label: 'Event title detail'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+          82c66dd6-5cb9-4005-8892-c6bf9b4593aa:
+            uuid: 82c66dd6-5cb9-4005-8892-c6bf9b4593aa
+            region: first
+            configuration:
+              id: 'field_block:paragraph:event_details_page_:field_e'
+              label: 'Event Datetime detail'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 2
+          bb1415d0-52b6-40f4-93cb-cf8560c144e6:
+            uuid: bb1415d0-52b6-40f4-93cb-cf8560c144e6
+            region: second
+            configuration:
+              id: addtoany_block
+              label: 'AddToAny buttons'
+              provider: addtoany
+              label_display: '0'
+              context_mapping: {  }
+            additional: {  }
+            weight: 0
+          eea697c0-460f-4841-809b-f380e2494bb2:
+            uuid: eea697c0-460f-4841-809b-f380e2494bb2
+            region: first
+            configuration:
+              id: 'inline_block:basic'
+              label: break
+              provider: layout_builder
+              label_display: '0'
+              view_mode: full
+              block_revision_id: 22
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          17438761-da43-413f-adad-4f4c9c647d76:
+            uuid: 17438761-da43-413f-adad-4f4c9c647d76
+            region: content
+            configuration:
+              id: 'field_block:paragraph:event_details_page_:field_event_summary_detail'
+              label: 'Event Summary detail'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
+          648d237b-05b2-437a-9126-4810eac2d53f:
+            uuid: 648d237b-05b2-437a-9126-4810eac2d53f
+            region: content
+            configuration:
+              id: 'field_block:paragraph:event_details_page_:field_event_moderator_detail'
+              label: 'Event Moderator detail'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 3
+          1c1f2914-5be9-4e64-b8df-a61c4473d08b:
+            uuid: 1c1f2914-5be9-4e64-b8df-a61c4473d08b
+            region: content
+            configuration:
+              id: 'field_block:paragraph:event_details_page_:field_event_speakers_detail'
+              label: 'Event speakers detail'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 5
+          e573c81d-a882-4f91-bc28-eec8bd8a8a66:
+            uuid: e573c81d-a882-4f91-bc28-eec8bd8a8a66
+            region: content
+            configuration:
+              id: 'field_block:paragraph:event_details_page_:field_event_resources_detail'
+              label: 'Event Resources detail'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: file_default
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 7
+          30490b91-7a3b-47d9-96a2-b22f204d79f4:
+            uuid: 30490b91-7a3b-47d9-96a2-b22f204d79f4
+            region: content
+            configuration:
+              id: 'field_block:paragraph:event_details_page_:field_event_media_detail'
+              label: 'Event media detail'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: full
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 9
+          035d6d1f-3b0f-4b38-a00d-dc2ffdcc8597:
+            uuid: 035d6d1f-3b0f-4b38-a00d-dc2ffdcc8597
+            region: content
+            configuration:
+              id: 'field_block:paragraph:event_details_page_:field_event_credits_details'
+              label: 'Event credits details'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 11
+          ea457759-592b-43cc-b700-ef3d4840b4e8:
+            uuid: ea457759-592b-43cc-b700-ef3d4840b4e8
+            region: content
+            configuration:
+              id: 'inline_block:basic'
+              label: break
+              provider: layout_builder
+              label_display: '0'
+              view_mode: full
+              block_revision_id: 26
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 6
+          edaef2c3-aa0e-45ef-9a03-cc8784264d6f:
+            uuid: edaef2c3-aa0e-45ef-9a03-cc8784264d6f
+            region: content
+            configuration:
+              id: 'inline_block:basic'
+              label: break
+              provider: layout_builder
+              label_display: '0'
+              view_mode: full
+              block_revision_id: 27
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 4
+          faf30f87-d345-4d5d-b644-31128dff88bc:
+            uuid: faf30f87-d345-4d5d-b644-31128dff88bc
+            region: content
+            configuration:
+              id: 'inline_block:basic'
+              label: break
+              provider: layout_builder
+              label_display: '0'
+              view_mode: full
+              block_revision_id: 28
+              block_serialized: null
+              context_mapping: {  }
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+id: paragraph.event_details_page_.default
+targetEntityType: paragraph
+bundle: event_details_page_
+mode: default
+content:
+  field_e:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_event:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_event_credits_details:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_event_media_detail:
+    type: entity_reference_entity_view
+    weight: 7
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_event_moderator_detail:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_event_register_detail:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_event_resources_detail:
+    weight: 6
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_event_speakers_detail:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_event_summary_detail:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

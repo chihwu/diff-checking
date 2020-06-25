@@ -1,0 +1,21 @@
+uuid: d62a02c1-6db0-4d2a-8d44-c9deece5ce50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_news_summary
+    - paragraphs.paragraphs_type.news
+  module:
+    - text
+id: paragraph.news.field_news_summary
+field_name: field_news_summary
+entity_type: paragraph
+bundle: news
+label: 'News Summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

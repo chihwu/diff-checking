@@ -1,0 +1,19 @@
+uuid: bd831dc8-0206-4d85-b86d-5b6f83ed8f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_projectoverview
+    - paragraphs.paragraphs_type.about_project_objective
+id: paragraph.about_project_objective.field_projectoverview
+field_name: field_projectoverview
+entity_type: paragraph
+bundle: about_project_objective
+label: ProjectOverview
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

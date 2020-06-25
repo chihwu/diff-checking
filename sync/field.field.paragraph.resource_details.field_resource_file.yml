@@ -1,0 +1,23 @@
+uuid: f840775a-3a8c-435c-a2c7-0bf894904e1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_resource_file
+    - paragraphs.paragraphs_type.resource_details
+  module:
+    - link
+id: paragraph.resource_details.field_resource_file
+field_name: field_resource_file
+entity_type: paragraph
+bundle: resource_details
+label: 'resource file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

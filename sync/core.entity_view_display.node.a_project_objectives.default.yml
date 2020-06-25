@@ -1,0 +1,96 @@
+uuid: 7ce8a0d2-0586-4c5b-9b59-20a20794c9dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.a_project_objectives.field_image_po
+    - field.field.node.a_project_objectives.field_textpo
+    - field.field.node.a_project_objectives.layout_builder__layout
+    - node.type.a_project_objectives
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          5183362e-efa2-442c-bd54-9e32553a8556:
+            uuid: 5183362e-efa2-442c-bd54-9e32553a8556
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:a_project_objectives:links'
+            additional: {  }
+            weight: 0
+          92826a49-d0fe-4b0f-8dee-c2a843444f19:
+            uuid: 92826a49-d0fe-4b0f-8dee-c2a843444f19
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:a_project_objectives:field_image_po'
+              formatter:
+                label: above
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 2
+          5d2a26ac-0b1f-4584-9b6e-7c14df4f0288:
+            uuid: 5d2a26ac-0b1f-4584-9b6e-7c14df4f0288
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:a_project_objectives:field_textpo'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+id: node.a_project_objectives.default
+targetEntityType: node
+bundle: a_project_objectives
+mode: default
+content:
+  field_image_po:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_textpo:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  layout_builder__layout: true

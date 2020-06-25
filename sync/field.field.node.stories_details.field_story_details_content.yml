@@ -1,0 +1,70 @@
+uuid: de6158b4-911c-42ed-80e3-e518ee488196
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_story_details_content
+    - node.type.stories_details
+    - paragraphs.paragraphs_type.stories_details
+  module:
+    - entity_reference_revisions
+id: node.stories_details.field_story_details_content
+field_name: field_story_details_content
+entity_type: node
+bundle: stories_details
+label: 'Story Details Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      stories_details: stories_details
+    target_bundles_drag_drop:
+      about_project_objective:
+        weight: 15
+        enabled: false
+      add_project_objective:
+        weight: 16
+        enabled: false
+      block:
+        weight: 17
+        enabled: false
+      contact:
+        weight: 18
+        enabled: false
+      country_reports:
+        weight: 19
+        enabled: false
+      covid_19_layout:
+        weight: 20
+        enabled: false
+      events_group:
+        weight: 21
+        enabled: false
+      header_image:
+        weight: 22
+        enabled: false
+      news:
+        weight: 23
+        enabled: false
+      one_column:
+        weight: 24
+        enabled: false
+      stories_details:
+        enabled: true
+        weight: 25
+      subscribe:
+        weight: 26
+        enabled: false
+      text:
+        weight: 27
+        enabled: false
+      view:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions

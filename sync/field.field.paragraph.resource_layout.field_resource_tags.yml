@@ -1,0 +1,21 @@
+uuid: ec665d50-ea5e-453a-870a-0916efb69ae1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_resource_tags
+    - paragraphs.paragraphs_type.resource_layout
+  module:
+    - text
+id: paragraph.resource_layout.field_resource_tags
+field_name: field_resource_tags
+entity_type: paragraph
+bundle: resource_layout
+label: 'Resource tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

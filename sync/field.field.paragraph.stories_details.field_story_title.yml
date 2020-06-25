@@ -1,0 +1,21 @@
+uuid: b72365db-dc45-43e2-8e45-c0a4a67095f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_story_title
+    - paragraphs.paragraphs_type.stories_details
+  module:
+    - text
+id: paragraph.stories_details.field_story_title
+field_name: field_story_title
+entity_type: paragraph
+bundle: stories_details
+label: 'Story title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

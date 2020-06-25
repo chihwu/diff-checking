@@ -1,0 +1,26 @@
+uuid: d2182e3a-cd28-49f0-8ea8-8037844acde0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.where_we_work_covid19.field_covid_19_layout
+    - node.type.where_we_work_covid19
+  module:
+    - entity_reference_revisions
+    - user
+id: node.where_we_work_covid19.default
+targetEntityType: node
+bundle: where_we_work_covid19
+mode: default
+content:
+  field_covid_19_layout:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  links: true

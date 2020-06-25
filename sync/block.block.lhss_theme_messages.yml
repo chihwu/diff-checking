@@ -1,0 +1,22 @@
+uuid: 95b85ccb-1a53-4e8a-8860-3bae94ad5a3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lhss_theme
+_core:
+  default_config_hash: uCIL3hdrLr0CDTaCc4o4AiRVPjv4vYMjyeLJALoAV8k
+id: lhss_theme_messages
+theme: lhss_theme
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

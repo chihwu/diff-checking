@@ -1,0 +1,20 @@
+uuid: 307ef932-14ee-4924-bde2-1b555137e0e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_story_image_description
+field_name: field_story_image_description
+entity_type: paragraph
+type: text
+settings:
+  max_length: 500
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

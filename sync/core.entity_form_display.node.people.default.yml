@@ -1,0 +1,38 @@
+uuid: 20453e63-0b25-425b-b621-7ac8b54e3320
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.people.field_picture
+    - image.style.thumbnail
+    - node.type.people
+  module:
+    - image
+id: node.people.default
+targetEntityType: node
+bundle: people
+mode: default
+content:
+  field_picture:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

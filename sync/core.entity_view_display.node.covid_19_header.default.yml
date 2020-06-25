@@ -1,0 +1,39 @@
+uuid: a440d1cf-aef2-47bb-b025-494b564d7779
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.covid_19_header.body
+    - field.field.node.covid_19_header.field_covid_19_header
+    - node.type.covid_19_header
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.covid_19_header.default
+targetEntityType: node
+bundle: covid_19_header
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_covid_19_header:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

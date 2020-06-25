@@ -1,0 +1,25 @@
+uuid: 9b5d9367-a68d-4ee6-8f59-6b2e9aa05ece
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:576913fc-c17d-41c1-9d76-2e50a96d3281'
+  module:
+    - block_content
+  theme:
+    - lhss_theme
+id: leftfooter
+theme: lhss_theme
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:576913fc-c17d-41c1-9d76-2e50a96d3281'
+settings:
+  id: 'block_content:576913fc-c17d-41c1-9d76-2e50a96d3281'
+  label: 'Left Footer '
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

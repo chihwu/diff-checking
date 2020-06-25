@@ -1,0 +1,22 @@
+uuid: 251b3d2f-ab6c-4ae9-88d5-697c7e424db2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lhss_theme
+_core:
+  default_config_hash: _dUT-48_f1GVFiS1wpdJm5joed3pxeQK-gTiGTRE0Js
+id: lhss_theme_local_tasks
+theme: lhss_theme
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

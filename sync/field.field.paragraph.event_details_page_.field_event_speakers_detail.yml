@@ -1,0 +1,21 @@
+uuid: 95df79b8-05dc-4cb7-83a3-d76dcf71a65e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_speakers_detail
+    - paragraphs.paragraphs_type.event_details_page_
+  module:
+    - text
+id: paragraph.event_details_page_.field_event_speakers_detail
+field_name: field_event_speakers_detail
+entity_type: paragraph
+bundle: event_details_page_
+label: 'Event speakers detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

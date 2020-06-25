@@ -1,0 +1,37 @@
+uuid: fbfb929c-2b22-42cf-927a-d24f231ac5c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project_partner.field_link
+    - node.type.project_partner
+  module:
+    - link
+id: node.project_partner.default
+targetEntityType: node
+bundle: project_partner
+mode: default
+content:
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

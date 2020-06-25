@@ -1,0 +1,18 @@
+uuid: 6a44fd56-ed5f-49c8-89e6-7c9937f7d0e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Country Reports'
+type: country_reports
+description: 'This is for ''Reports'' section of each Country profile'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,18 @@
+uuid: d1de41b0-8998-407d-ba4b-81050901b9fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Project Overview'
+type: project_overview
+description: 'About (Project Overview)'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

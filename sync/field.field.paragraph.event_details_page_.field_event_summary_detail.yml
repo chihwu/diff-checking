@@ -1,0 +1,21 @@
+uuid: 837c18d3-b1e4-448d-ac99-50e5fac075df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_summary_detail
+    - paragraphs.paragraphs_type.event_details_page_
+  module:
+    - text
+id: paragraph.event_details_page_.field_event_summary_detail
+field_name: field_event_summary_detail
+entity_type: paragraph
+bundle: event_details_page_
+label: 'Event Summary detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

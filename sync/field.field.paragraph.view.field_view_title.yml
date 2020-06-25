@@ -1,0 +1,21 @@
+uuid: 682ede9e-576c-4473-b44d-5591cbb24ff1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view_title
+    - paragraphs.paragraphs_type.view
+  module:
+    - text
+id: paragraph.view.field_view_title
+field_name: field_view_title
+entity_type: paragraph
+bundle: view
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

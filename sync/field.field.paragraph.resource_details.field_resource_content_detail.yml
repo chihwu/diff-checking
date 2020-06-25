@@ -1,0 +1,21 @@
+uuid: f6e850b6-6647-4276-8349-75453f2821c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_resource_content_detail
+    - paragraphs.paragraphs_type.resource_details
+  module:
+    - text
+id: paragraph.resource_details.field_resource_content_detail
+field_name: field_resource_content_detail
+entity_type: paragraph
+bundle: resource_details
+label: 'resource content detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 3b6d3436-e1f4-45d8-9a20-4795faebbe5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_block.field_custom_block
+    - paragraphs.paragraphs_type.custom_block
+id: paragraph.custom_block.default
+targetEntityType: paragraph
+bundle: custom_block
+mode: default
+content:
+  field_custom_block:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

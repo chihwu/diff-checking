@@ -1,0 +1,88 @@
+uuid: 5df6348d-b229-49bd-80cc-c83451cbd2bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.covid_19_layout.field_covid19_text
+    - field.field.paragraph.covid_19_layout.field_covid19_video
+    - paragraphs.paragraphs_type.covid_19_layout
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          e6fc4d05-357e-45bb-b96f-147792a986f6:
+            uuid: e6fc4d05-357e-45bb-b96f-147792a986f6
+            region: content
+            configuration:
+              id: 'field_block:paragraph:covid_19_layout:field_covid19_text'
+              label: covid19_text
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6615fee7-2760-42ed-9222-8fd8e9dce70f:
+            uuid: 6615fee7-2760-42ed-9222-8fd8e9dce70f
+            region: content
+            configuration:
+              id: 'field_block:paragraph:covid_19_layout:field_covid19_video'
+              label: covid19_video
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: full
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+id: paragraph.covid_19_layout.default
+targetEntityType: paragraph
+bundle: covid_19_layout
+mode: default
+content:
+  field_covid19_text:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_covid19_video:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

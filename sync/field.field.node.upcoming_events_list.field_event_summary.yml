@@ -1,0 +1,21 @@
+uuid: c2bbd528-209a-402e-82d4-503160876450
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_summary
+    - node.type.upcoming_events_list
+  module:
+    - text
+id: node.upcoming_events_list.field_event_summary
+field_name: field_event_summary
+entity_type: node
+bundle: upcoming_events_list
+label: 'Event Summary'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

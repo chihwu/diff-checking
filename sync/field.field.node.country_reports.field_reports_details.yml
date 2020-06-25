@@ -1,0 +1,61 @@
+uuid: a0fbc243-48e0-40fd-80f5-3ce9542fb78d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reports_details
+    - node.type.country_reports
+    - paragraphs.paragraphs_type.country_reports
+  module:
+    - entity_reference_revisions
+id: node.country_reports.field_reports_details
+field_name: field_reports_details
+entity_type: node
+bundle: country_reports
+label: 'Reports Details'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      country_reports: country_reports
+    target_bundles_drag_drop:
+      about_project_objective:
+        weight: 12
+        enabled: false
+      add_project_objective:
+        weight: 13
+        enabled: false
+      block:
+        weight: 14
+        enabled: false
+      contact:
+        weight: 15
+        enabled: false
+      country_reports:
+        enabled: true
+        weight: 16
+      covid_19_layout:
+        weight: 17
+        enabled: false
+      header_image:
+        weight: 18
+        enabled: false
+      one_column:
+        weight: 19
+        enabled: false
+      subscribe:
+        weight: 20
+        enabled: false
+      text:
+        weight: 21
+        enabled: false
+      view:
+        weight: 22
+        enabled: false
+field_type: entity_reference_revisions
