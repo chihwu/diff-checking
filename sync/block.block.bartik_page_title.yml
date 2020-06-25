@@ -1,15 +1,15 @@
-uuid: b67cc011-4f3c-4c18-bc0f-f376ced34bb3
+uuid: a89ed0c4-912b-43eb-ae92-ce4340d8e234
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - bartik
 _core:
-  default_config_hash: Qhh0G-z8Rns45Hj1YzTyZoYUN3o1ywuLSvztO4agMJQ
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: bartik_page_title
 theme: bartik
-region: header
-weight: -6
+region: content
+weight: -50
 provider: null
 plugin: page_title_block
 settings:

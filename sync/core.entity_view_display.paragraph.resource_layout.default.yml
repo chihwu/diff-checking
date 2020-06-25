@@ -22,7 +22,7 @@ third_party_settings:
         layout_id: layout_twocol_section
         layout_settings:
           label: ''
-          column_widths: 33-67
+          column_widths: 25-75
         components:
           ae003f94-c604-4fd2-b325-e8f8d5391fd8:
             uuid: ae003f94-c604-4fd2-b325-e8f8d5391fd8
