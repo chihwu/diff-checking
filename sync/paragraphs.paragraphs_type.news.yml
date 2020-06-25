@@ -1,0 +1,10 @@
+uuid: dc3e1bf2-7e68-4ec4-8249-5b5fca8a62c6
+langcode: en
+status: true
+dependencies: {  }
+id: news
+label: News
+icon_uuid: null
+icon_default: null
+description: 'This structure is used for News section of the News page'
+behavior_plugins: {  }

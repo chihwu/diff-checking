@@ -1,0 +1,78 @@
+uuid: e3104187-977f-49c3-a2e5-c696b1d77341
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_project_objective.field_image_po
+    - field.field.paragraph.about_project_objective.field_projectoverview
+    - paragraphs.paragraphs_type.about_project_objective
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          64fb8b4e-f273-45b8-a332-937364bf3476:
+            uuid: 64fb8b4e-f273-45b8-a332-937364bf3476
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:about_project_objective:field_projectoverview'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          f03855a3-d9c1-4cbb-af3b-df6da768ac1d:
+            uuid: f03855a3-d9c1-4cbb-af3b-df6da768ac1d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:about_project_objective:field_image_po'
+              formatter:
+                label: above
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: paragraph.about_project_objective.default
+targetEntityType: paragraph
+bundle: about_project_objective
+mode: default
+content:
+  field_image_po:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_projectoverview:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

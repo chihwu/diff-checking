@@ -1,0 +1,64 @@
+uuid: 92de4e6b-29f1-4e8f-be6d-d1a22df9c226
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news
+    - node.type.news_layout
+    - paragraphs.paragraphs_type.news
+  module:
+    - entity_reference_revisions
+id: node.news_layout.field_news
+field_name: field_news
+entity_type: node
+bundle: news_layout
+label: News
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      news: news
+    target_bundles_drag_drop:
+      about_project_objective:
+        weight: 13
+        enabled: false
+      add_project_objective:
+        weight: 14
+        enabled: false
+      block:
+        weight: 15
+        enabled: false
+      contact:
+        weight: 16
+        enabled: false
+      country_reports:
+        weight: 17
+        enabled: false
+      covid_19_layout:
+        weight: 18
+        enabled: false
+      header_image:
+        weight: 19
+        enabled: false
+      news:
+        enabled: true
+        weight: 20
+      one_column:
+        weight: 21
+        enabled: false
+      subscribe:
+        weight: 22
+        enabled: false
+      text:
+        weight: 23
+        enabled: false
+      view:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

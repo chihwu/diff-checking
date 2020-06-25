@@ -1,0 +1,21 @@
+uuid: 971a13aa-8047-4fae-bacc-ce3c3feaf8d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_e
+    - paragraphs.paragraphs_type.event_details_page_
+  module:
+    - text
+id: paragraph.event_details_page_.field_e
+field_name: field_e
+entity_type: paragraph
+bundle: event_details_page_
+label: 'Event Datetime detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

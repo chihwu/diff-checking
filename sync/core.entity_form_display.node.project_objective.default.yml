@@ -1,0 +1,58 @@
+uuid: 918b75e0-0b6b-49a6-8960-0bdbf7563dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project_objective.body
+    - field.field.node.project_objective.field_content_at_bottom
+    - field.field.node.project_objective.field_objective_image
+    - image.style.thumbnail
+    - node.type.project_objective
+  module:
+    - image
+    - text
+id: node.project_objective.default
+targetEntityType: node
+bundle: project_objective
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_content_at_bottom:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_objective_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

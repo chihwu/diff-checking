@@ -1,0 +1,34 @@
+uuid: a7f123e0-7e2a-4876-9708-4f6b252b54b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.country_reports.body
+    - field.field.node.country_reports.field_country
+    - field.field.node.country_reports.field_reports_details
+    - node.type.country_reports
+  module:
+    - text
+    - user
+id: node.country_reports.teaser
+targetEntityType: node
+bundle: country_reports
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_country: true
+  field_reports_details: true

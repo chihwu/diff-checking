@@ -1,0 +1,43 @@
+uuid: 4941b635-f574-4578-8fd1-c867302b6a30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.stories_details.body
+    - field.field.node.stories_details.field_story_details_content
+    - node.type.stories_details
+  module:
+    - paragraphs
+id: node.stories_details.default
+targetEntityType: node
+bundle: stories_details
+mode: default
+content:
+  field_story_details_content:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

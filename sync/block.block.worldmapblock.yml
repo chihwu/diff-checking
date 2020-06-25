@@ -1,0 +1,20 @@
+uuid: 0bcbec54-a1c7-456f-b8a0-57c379b0a114
+langcode: en
+status: true
+dependencies:
+  module:
+    - lhss
+  theme:
+    - lhss_theme
+id: worldmapblock
+theme: lhss_theme
+region: auto_hidden_block
+weight: 0
+provider: null
+plugin: world_map_block
+settings:
+  id: world_map_block
+  label: 'World Map Block'
+  provider: lhss
+  label_display: '0'
+visibility: {  }

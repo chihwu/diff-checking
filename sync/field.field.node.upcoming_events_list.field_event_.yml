@@ -1,0 +1,21 @@
+uuid: 89d3b359-197e-4782-b5b4-9bf5c3695e4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_
+    - node.type.upcoming_events_list
+  module:
+    - options
+id: node.upcoming_events_list.field_event_
+field_name: field_event_
+entity_type: node
+bundle: upcoming_events_list
+label: 'Event Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

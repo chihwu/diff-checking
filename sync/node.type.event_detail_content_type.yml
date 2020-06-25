@@ -1,0 +1,17 @@
+uuid: abba681b-0e79-4839-a036-873e51efaf7a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Event detail content type'
+type: event_detail_content_type
+description: 'This content type is used for Event detail page arrangement'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

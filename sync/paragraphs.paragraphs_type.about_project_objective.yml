@@ -1,0 +1,10 @@
+uuid: 4e970c3d-0cc4-45cb-905d-1503eb90d463
+langcode: en
+status: true
+dependencies: {  }
+id: about_project_objective
+label: 'About Project Objective'
+icon_uuid: null
+icon_default: null
+description: 'About page project Objective block'
+behavior_plugins: {  }

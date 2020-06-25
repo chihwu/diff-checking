@@ -1,0 +1,38 @@
+uuid: 4f357677-dff0-4177-a6cc-0a690c4028bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_story_image
+    - paragraphs.paragraphs_type.stories_details
+  module:
+    - image
+id: paragraph.stories_details.field_story_image
+field_name: field_story_image
+entity_type: paragraph
+bundle: stories_details
+label: 'Story Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,10 @@
+uuid: bab5863d-fdea-45fd-bfeb-1c13750ec340
+langcode: en
+status: true
+dependencies: {  }
+id: events_group
+label: 'Events Group'
+icon_uuid: null
+icon_default: null
+description: 'This structure is mainly for the top 3 upcoming events to show on the events landing page'
+behavior_plugins: {  }

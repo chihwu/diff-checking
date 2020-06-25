@@ -1,0 +1,41 @@
+uuid: 37aa1671-dc2b-4db0-9ba9-0ad7cf0f6bbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.where_we_work_covid19.field_covid_19_layout
+    - node.type.where_we_work_covid19
+  module:
+    - paragraphs
+id: node.where_we_work_covid19.default
+targetEntityType: node
+bundle: where_we_work_covid19
+mode: default
+content:
+  field_covid_19_layout:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

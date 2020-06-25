@@ -1,0 +1,21 @@
+uuid: 901b3938-56c4-4803-afa8-5ce803ccb44e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_info
+    - paragraphs.paragraphs_type.contact
+  module:
+    - text
+id: paragraph.contact.field_contact_info
+field_name: field_contact_info
+entity_type: paragraph
+bundle: contact
+label: 'Contact Info'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

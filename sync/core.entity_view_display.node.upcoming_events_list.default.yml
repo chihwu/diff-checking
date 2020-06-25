@@ -1,0 +1,218 @@
+uuid: 7c373a25-55c4-4b1f-9978-ce093bc6de0e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.upcoming_events_list.body
+    - field.field.node.upcoming_events_list.field_event_
+    - field.field.node.upcoming_events_list.field_event_category
+    - field.field.node.upcoming_events_list.field_event_datetime
+    - field.field.node.upcoming_events_list.field_event_poster
+    - field.field.node.upcoming_events_list.field_event_register
+    - field.field.node.upcoming_events_list.field_event_summary
+    - field.field.node.upcoming_events_list.field_event_title
+    - node.type.upcoming_events_list
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - options
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          744f2196-3fa9-4ae8-8a8d-50dd6864753f:
+            uuid: 744f2196-3fa9-4ae8-8a8d-50dd6864753f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:upcoming_events_list:field_event_'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 11
+          888db15e-6a4b-4d10-b917-f4214fe46f1a:
+            uuid: 888db15e-6a4b-4d10-b917-f4214fe46f1a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:upcoming_events_list:field_event_register'
+              formatter:
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+                type: link
+            additional: {  }
+            weight: 10
+          18cae66b-3275-4f78-a989-36304a11ebb3:
+            uuid: 18cae66b-3275-4f78-a989-36304a11ebb3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:upcoming_events_list:field_event_poster'
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 4
+          a0e8b07d-5bcd-4aaf-babc-360e46b3688f:
+            uuid: a0e8b07d-5bcd-4aaf-babc-360e46b3688f
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:upcoming_events_list:field_event_datetime'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 7
+          014999aa-fcf3-45af-87c8-c215bd95c068:
+            uuid: 014999aa-fcf3-45af-87c8-c215bd95c068
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:upcoming_events_list:field_event_summary'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 9
+          e4c9b818-16e8-452b-95d1-0338033114ae:
+            uuid: e4c9b818-16e8-452b-95d1-0338033114ae
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:upcoming_events_list:field_event_title'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 8
+          35813dbe-9060-4d3d-acb7-228d01267a97:
+            uuid: 35813dbe-9060-4d3d-acb7-228d01267a97
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:upcoming_events_list:field_event_category'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: list_default
+            additional: {  }
+            weight: 12
+        third_party_settings: {  }
+id: node.upcoming_events_list.default
+targetEntityType: node
+bundle: upcoming_events_list
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_event_category:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_event_datetime:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_event_poster:
+    type: entity_reference_entity_view
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_event_register:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_event_summary:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_event_title:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

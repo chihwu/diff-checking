@@ -1,0 +1,27 @@
+uuid: 0313cb72-e7d9-4b17-a403-cbc1c795aaa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - lhss_theme
+_core:
+  default_config_hash: QsPLbE0LbLJhdrFMQEzTNPYTLJzDDqdtx59zPLXQy2c
+id: lhss_theme_account_menu
+theme: lhss_theme
+region: email
+weight: -9
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

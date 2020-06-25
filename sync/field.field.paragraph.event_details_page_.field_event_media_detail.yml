@@ -1,0 +1,36 @@
+uuid: d624fd3e-e2b3-43e8-b1f0-242c6381f8f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_media_detail
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.event_details_page_
+id: paragraph.event_details_page_.field_event_media_detail
+field_name: field_event_media_detail
+entity_type: paragraph
+bundle: event_details_page_
+label: 'Event media detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      document: document
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: audio
+field_type: entity_reference

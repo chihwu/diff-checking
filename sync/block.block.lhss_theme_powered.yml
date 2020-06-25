@@ -1,0 +1,22 @@
+uuid: 71a78fb5-c5ac-49c7-92c8-5381b950d045
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - lhss_theme
+_core:
+  default_config_hash: luH0H1-nWTzWp7AHJl5ZOCLR8Zka0p49fzVTTsPcOJk
+id: lhss_theme_powered
+theme: lhss_theme
+region: auto_hidden_block
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

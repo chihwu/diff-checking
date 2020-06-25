@@ -1,0 +1,21 @@
+uuid: 8bc0079c-8f2b-4b0b-a4b7-8967000afd4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_resource_title
+    - paragraphs.paragraphs_type.resource_layout
+  module:
+    - text
+id: paragraph.resource_layout.field_resource_title
+field_name: field_resource_title
+entity_type: paragraph
+bundle: resource_layout
+label: 'Resource Title'
+description: 'This field is to enter the resourec/publication title. this filed is only for view search. This filed will not be shown in the view'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

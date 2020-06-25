@@ -1,0 +1,19 @@
+uuid: 259d756d-8305-42df-a05b-87cbec807c8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_homeofficel1
+    - node.type.home_office1
+id: node.home_office1.field_homeofficel1
+field_name: field_homeofficel1
+entity_type: node
+bundle: home_office1
+label: homeofficelb
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

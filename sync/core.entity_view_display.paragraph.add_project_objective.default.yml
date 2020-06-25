@@ -1,0 +1,77 @@
+uuid: 1ae64545-d9f1-48b2-b4c6-93d661e8650b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.add_project_objective.field_imageapo
+    - field.field.paragraph.add_project_objective.field_imageapo1
+    - paragraphs.paragraphs_type.add_project_objective
+  module:
+    - image
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          56891e3c-a560-4c9b-975e-97d489b5f391:
+            uuid: 56891e3c-a560-4c9b-975e-97d489b5f391
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:add_project_objective:field_imageapo'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 0
+          0d8173e1-c4c3-496e-a1a0-3004d651ecec:
+            uuid: 0d8173e1-c4c3-496e-a1a0-3004d651ecec
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:add_project_objective:field_imageapo1'
+              formatter:
+                label: above
+                settings:
+                  image_style: ''
+                  image_link: ''
+                third_party_settings: {  }
+                type: image
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: paragraph.add_project_objective.default
+targetEntityType: paragraph
+bundle: add_project_objective
+mode: default
+content:
+  field_imageapo:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_imageapo1:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

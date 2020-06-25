@@ -1,0 +1,21 @@
+uuid: 87a7fbe9-1117-4de0-87e0-d885b616bd86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_custom_block
+    - paragraphs.paragraphs_type.custom_block
+id: paragraph.custom_block.field_custom_block
+field_name: field_custom_block
+entity_type: paragraph
+bundle: custom_block
+label: 'Custom Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 714eb60c-549e-4013-bf3f-23def2079fc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subscribe_action_button
+    - paragraphs.paragraphs_type.subscribe
+  module:
+    - link
+id: paragraph.subscribe.field_subscribe_action_button
+field_name: field_subscribe_action_button
+entity_type: paragraph
+bundle: subscribe
+label: 'Action Button'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

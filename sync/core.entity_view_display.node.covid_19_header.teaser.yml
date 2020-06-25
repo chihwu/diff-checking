@@ -1,0 +1,32 @@
+uuid: b60ff9a4-f453-4671-834e-813bb0bdf4fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.covid_19_header.body
+    - field.field.node.covid_19_header.field_covid_19_header
+    - node.type.covid_19_header
+  module:
+    - text
+    - user
+id: node.covid_19_header.teaser
+targetEntityType: node
+bundle: covid_19_header
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_covid_19_header: true

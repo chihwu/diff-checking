@@ -1,0 +1,27 @@
+uuid: 422d7242-7b73-4456-a245-a531e8c35f14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_resources_detail
+    - paragraphs.paragraphs_type.event_details_page_
+  module:
+    - file
+id: paragraph.event_details_page_.field_event_resources_detail
+field_name: field_event_resources_detail
+entity_type: paragraph
+bundle: event_details_page_
+label: 'Event Resources detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf xls xlsx doc docx'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

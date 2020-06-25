@@ -1,0 +1,20 @@
+uuid: 57d72094-e82d-4b37-86cb-bf3efd55e323
+langcode: en
+status: false
+dependencies:
+  theme:
+    - lhss_theme
+_core:
+  default_config_hash: BEVB6btOCCWua14O6mKXt6lW02tueEcdr3eYPBUvFEE
+id: lhss_theme_local_actions
+theme: lhss_theme
+region: auto_hidden_block
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

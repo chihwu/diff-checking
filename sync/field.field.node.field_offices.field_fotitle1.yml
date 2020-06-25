@@ -1,0 +1,19 @@
+uuid: 1c60184b-ecc0-4fd3-86a2-44229b31ccf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fotitle1
+    - node.type.field_offices
+id: node.field_offices.field_fotitle1
+field_name: field_fotitle1
+entity_type: node
+bundle: field_offices
+label: foTitle1
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

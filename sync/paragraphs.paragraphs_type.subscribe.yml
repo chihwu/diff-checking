@@ -1,0 +1,10 @@
+uuid: 35862a4b-6bd7-4c19-9ad0-429ddf1ffcd3
+langcode: en
+status: true
+dependencies: {  }
+id: subscribe
+label: Subscribe
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,17 @@
+uuid: 713f19b1-160d-41f2-8a08-80ba9f898a10
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: COVID_19-header
+type: covid_19_header
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,15 @@
+uuid: 93a71259-4ccc-4230-823f-b2e0a492ebd3
+langcode: en
+status: true
+dependencies: {  }
+name: passport
+label: Passport
+effects:
+  dcdce823-678f-441f-b3df-ae06c34b6f08:
+    uuid: dcdce823-678f-441f-b3df-ae06c34b6f08
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 100
+      upscale: false

@@ -1,0 +1,23 @@
+uuid: b0b83e80-2618-4433-9e89-9eb73e873a2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_register
+    - node.type.upcoming_events_list
+  module:
+    - link
+id: node.upcoming_events_list.field_event_register
+field_name: field_event_register
+entity_type: node
+bundle: upcoming_events_list
+label: 'Event Register'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

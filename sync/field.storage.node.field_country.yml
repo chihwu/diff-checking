@@ -1,0 +1,33 @@
+uuid: c0bff89d-b257-4b39-b37e-d91d9d9dab0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_country
+field_name: field_country
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Jordan
+      label: Jordan
+    -
+      value: Columbia
+      label: Columbia
+    -
+      value: Zimbabway
+      label: Zimbabway
+    -
+      value: 'East Africa'
+      label: 'East Africa'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 6264a303-e034-49ae-81b6-47b9c8fd6c04
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news_layout
+id: node.news_layout.promote
+field_name: promote
+entity_type: node
+bundle: news_layout
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

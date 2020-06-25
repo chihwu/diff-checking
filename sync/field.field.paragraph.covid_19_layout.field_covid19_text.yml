@@ -1,0 +1,21 @@
+uuid: 2af7ba66-366f-4ce7-8b4d-953751135486
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_covid19_text
+    - paragraphs.paragraphs_type.covid_19_layout
+  module:
+    - text
+id: paragraph.covid_19_layout.field_covid19_text
+field_name: field_covid19_text
+entity_type: paragraph
+bundle: covid_19_layout
+label: covid19_text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: b59bdbdb-afab-4b57-a2ad-169c6183d0e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_register_detail
+    - paragraphs.paragraphs_type.event_details_page_
+  module:
+    - link
+id: paragraph.event_details_page_.field_event_register_detail
+field_name: field_event_register_detail
+entity_type: paragraph
+bundle: event_details_page_
+label: 'Event register detail'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

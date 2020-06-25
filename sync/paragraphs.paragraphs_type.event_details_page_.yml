@@ -1,0 +1,10 @@
+uuid: 436e8827-eca5-48b5-8bef-c0647e20233b
+langcode: en
+status: true
+dependencies: {  }
+id: event_details_page_
+label: 'Event Details Page '
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

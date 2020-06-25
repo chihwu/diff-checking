@@ -1,0 +1,22 @@
+uuid: 675e59c7-d9db-4719-a087-6572929342db
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.where_we_work_covid19.field_covid_19_layout
+    - node.type.where_we_work_covid19
+  module:
+    - user
+id: node.where_we_work_covid19.teaser
+targetEntityType: node
+bundle: where_we_work_covid19
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_covid_19_layout: true

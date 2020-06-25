@@ -1,0 +1,22 @@
+uuid: 10d9064f-5c49-45ef-9bd4-2b0e759f761c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project_partner.field_link
+    - node.type.project_partner
+  module:
+    - user
+id: node.project_partner.teaser
+targetEntityType: node
+bundle: project_partner
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_link: true

@@ -1,0 +1,124 @@
+uuid: 5b4fbcbf-311f-43b9-a067-a7a8b502cf0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.field_offices.field_foimage
+    - field.field.node.field_offices.field_folabel1
+    - field.field.node.field_offices.field_fotitle1
+    - field.field.node.field_offices.layout_builder__layout
+    - image.style.passport
+    - node.type.field_offices
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          f39c7790-0aad-4510-ac49-cb61feabe4cc:
+            uuid: f39c7790-0aad-4510-ac49-cb61feabe4cc
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:field_offices:field_foimage'
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_style: passport
+                  image_link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          2e4fe76b-6eb6-40c4-b306-d18ead00cde3:
+            uuid: 2e4fe76b-6eb6-40c4-b306-d18ead00cde3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:field_offices:field_folabel1'
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          f4a9a5ce-f6b0-4453-9408-472ba8d4fb5d:
+            uuid: f4a9a5ce-f6b0-4453-9408-472ba8d4fb5d
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:field_offices:field_fotitle1'
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 2
+          bd1a563e-a443-4bdc-8a63-e8ffe29cd1e9:
+            uuid: bd1a563e-a443-4bdc-8a63-e8ffe29cd1e9
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:field_offices:links'
+            additional: {  }
+            weight: 3
+        third_party_settings: {  }
+id: node.field_offices.teaser
+targetEntityType: node
+bundle: field_offices
+mode: teaser
+content:
+  field_foimage:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: passport
+      image_link: ''
+    third_party_settings: {  }
+  field_folabel1:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_fotitle1:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

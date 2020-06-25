@@ -1,0 +1,22 @@
+uuid: 99df1de3-610b-41de-8d14-d13565538d1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lhss_theme
+_core:
+  default_config_hash: KuWxb9TVNEnnKHjCCRnlzxH3lWG0gZAxbOUsd-U6Tp0
+id: lhss_theme_help
+theme: lhss_theme
+region: highlighted
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
