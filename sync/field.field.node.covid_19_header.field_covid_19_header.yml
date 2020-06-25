@@ -1,0 +1,49 @@
+uuid: 4631c9df-b3e0-4ae8-a661-463bf6531576
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_covid_19_header
+    - node.type.covid_19_header
+    - paragraphs.paragraphs_type.header_image
+  module:
+    - entity_reference_revisions
+id: node.covid_19_header.field_covid_19_header
+field_name: field_covid_19_header
+entity_type: node
+bundle: covid_19_header
+label: 'Covid-19 header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      header_image: header_image
+    target_bundles_drag_drop:
+      block:
+        weight: 8
+        enabled: false
+      contact:
+        weight: 9
+        enabled: false
+      covid_19_layout:
+        weight: 10
+        enabled: false
+      header_image:
+        enabled: true
+        weight: 11
+      subscribe:
+        weight: 12
+        enabled: false
+      text:
+        weight: 13
+        enabled: false
+      view:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

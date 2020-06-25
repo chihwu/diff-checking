@@ -1,0 +1,32 @@
+uuid: 909801ae-f2fd-441c-9fec-1d5ddf5d81d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project_overview.body
+    - field.field.node.project_overview.layout_builder__layout
+    - node.type.project_overview
+  module:
+    - text
+    - user
+id: node.project_overview.teaser
+targetEntityType: node
+bundle: project_overview
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  layout_builder__layout: true

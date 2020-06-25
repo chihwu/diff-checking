@@ -1,0 +1,20 @@
+uuid: f238323a-e556-4aef-9f53-1abd8b047141
+langcode: en
+status: true
+dependencies:
+  module:
+    - gtranslate
+  theme:
+    - lhss_theme
+id: gtranslate
+theme: lhss_theme
+region: top_menu
+weight: -10
+provider: null
+plugin: gtranslate_block
+settings:
+  id: gtranslate_block
+  label: GTranslate
+  provider: gtranslate
+  label_display: '0'
+visibility: {  }

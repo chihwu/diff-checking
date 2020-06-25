@@ -1,0 +1,74 @@
+uuid: 6edf0086-d9b9-4dd1-a72a-c9ea96fa2e53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.one_column.field_one_column_body
+    - field.field.paragraph.one_column.field_one_column_title
+    - paragraphs.paragraphs_type.one_column
+  module:
+    - layout_builder
+    - text
+third_party_settings:
+  layout_builder:
+    allow_custom: true
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          3b01b960-201b-43b0-9820-4c4000e83a05:
+            uuid: 3b01b960-201b-43b0-9820-4c4000e83a05
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:one_column:field_one_column_title'
+              formatter:
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          c7edbba3-8d49-49ec-bacd-14758395723c:
+            uuid: c7edbba3-8d49-49ec-bacd-14758395723c
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:paragraph:one_column:field_one_column_body'
+              formatter:
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 1
+        third_party_settings: {  }
+id: paragraph.one_column.default
+targetEntityType: paragraph
+bundle: one_column
+mode: default
+content:
+  field_one_column_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_one_column_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

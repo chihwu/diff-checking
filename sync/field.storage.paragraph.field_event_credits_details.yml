@@ -1,0 +1,20 @@
+uuid: 4c19f109-1190-4955-a7e4-26ac9fd29bd1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_event_credits_details
+field_name: field_event_credits_details
+entity_type: paragraph
+type: text
+settings:
+  max_length: 500
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

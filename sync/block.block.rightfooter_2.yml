@@ -1,0 +1,25 @@
+uuid: f017bd88-73c0-4efe-a8db-84f1177bd7b3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4d73089a-2bee-4f74-80be-8bcfe48d6b48'
+  module:
+    - block_content
+  theme:
+    - lhss_theme
+id: rightfooter_2
+theme: lhss_theme
+region: footer_third
+weight: 0
+provider: null
+plugin: 'block_content:4d73089a-2bee-4f74-80be-8bcfe48d6b48'
+settings:
+  id: 'block_content:4d73089a-2bee-4f74-80be-8bcfe48d6b48'
+  label: 'Right Footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

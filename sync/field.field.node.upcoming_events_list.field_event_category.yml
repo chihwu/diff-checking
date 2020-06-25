@@ -1,0 +1,21 @@
+uuid: 4af50041-331f-453c-b4bb-74c1efc3bfe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_category
+    - node.type.upcoming_events_list
+  module:
+    - options
+id: node.upcoming_events_list.field_event_category
+field_name: field_event_category
+entity_type: node
+bundle: upcoming_events_list
+label: 'Event Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

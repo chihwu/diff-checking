@@ -1,0 +1,19 @@
+uuid: d75a2780-ba46-4a3a-9371-a4c4e595b40c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_event_datetime
+    - paragraphs.paragraphs_type.events_group
+id: paragraph.events_group.field_event_datetime
+field_name: field_event_datetime
+entity_type: paragraph
+bundle: events_group
+label: 'Event Datetime'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

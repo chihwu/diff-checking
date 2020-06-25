@@ -1,0 +1,20 @@
+uuid: 1e37015f-7320-4f72-ac74-9bc0f42afb86
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_event_title
+field_name: field_event_title
+entity_type: paragraph
+type: text
+settings:
+  max_length: 1000
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

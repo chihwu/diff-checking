@@ -1,0 +1,21 @@
+uuid: 3aced65c-fe59-4e37-b737-a4b2453840f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_story_date
+    - paragraphs.paragraphs_type.stories_details
+  module:
+    - text
+id: paragraph.stories_details.field_story_date
+field_name: field_story_date
+entity_type: paragraph
+bundle: stories_details
+label: 'Story Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

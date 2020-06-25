@@ -1,0 +1,44 @@
+uuid: cb45457a-5eff-4bbb-8f00-0958781b4d5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.upcoming_events_list.body
+    - field.field.node.upcoming_events_list.field_event_
+    - field.field.node.upcoming_events_list.field_event_category
+    - field.field.node.upcoming_events_list.field_event_datetime
+    - field.field.node.upcoming_events_list.field_event_poster
+    - field.field.node.upcoming_events_list.field_event_register
+    - field.field.node.upcoming_events_list.field_event_summary
+    - field.field.node.upcoming_events_list.field_event_title
+    - node.type.upcoming_events_list
+  module:
+    - text
+    - user
+id: node.upcoming_events_list.teaser
+targetEntityType: node
+bundle: upcoming_events_list
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_event_: true
+  field_event_category: true
+  field_event_datetime: true
+  field_event_poster: true
+  field_event_register: true
+  field_event_summary: true
+  field_event_title: true

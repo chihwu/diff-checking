@@ -1,0 +1,22 @@
+uuid: f3fd196e-8709-4a8a-bded-bb2f5a39b62d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lhss_theme
+_core:
+  default_config_hash: eIrZAQjnmnpRpuM4wUNka9bedCUcRwNEn6ZjrIBbTmY
+id: lhss_theme_content
+theme: lhss_theme
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

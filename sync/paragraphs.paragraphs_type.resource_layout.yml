@@ -1,0 +1,10 @@
+uuid: a429162f-f300-49c1-a1d1-eed76fe24d40
+langcode: en
+status: true
+dependencies: {  }
+id: resource_layout
+label: 'Resource Layout'
+icon_uuid: null
+icon_default: null
+description: 'Structure for featured resource '
+behavior_plugins: {  }

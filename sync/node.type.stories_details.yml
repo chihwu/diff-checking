@@ -1,0 +1,18 @@
+uuid: c71b0994-efff-48c1-83ab-d2af08187a6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Stories Details'
+type: stories_details
+description: 'This content type is used mainly for Story details content'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

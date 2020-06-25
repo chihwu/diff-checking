@@ -1,0 +1,48 @@
+uuid: d95aa700-ccc6-4687-b3d8-50f3942e489c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_page
+field_name: field_page
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: homepage
+      label: Homepage
+    -
+      value: what_we_do
+      label: 'What We Do'
+    -
+      value: where_we_work
+      label: 'Where We Work'
+    -
+      value: Event
+      label: Event
+    -
+      value: News
+      label: News
+    -
+      value: Jordan
+      label: Jordan
+    -
+      value: Columbia
+      label: Columbia
+    -
+      value: Zimbabway
+      label: Zimbabway
+    -
+      value: 'East Africa'
+      label: 'East Africa'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

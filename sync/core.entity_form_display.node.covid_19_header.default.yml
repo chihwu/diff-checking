@@ -1,0 +1,43 @@
+uuid: 31bf6468-b8cb-4c47-abee-1a390ef3a4f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.covid_19_header.body
+    - field.field.node.covid_19_header.field_covid_19_header
+    - node.type.covid_19_header
+  module:
+    - paragraphs
+id: node.covid_19_header.default
+targetEntityType: node
+bundle: covid_19_header
+mode: default
+content:
+  field_covid_19_header:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

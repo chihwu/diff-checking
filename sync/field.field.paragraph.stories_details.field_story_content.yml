@@ -1,0 +1,21 @@
+uuid: 30739ca4-c451-42f2-a495-d029d3414519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_story_content
+    - paragraphs.paragraphs_type.stories_details
+  module:
+    - text
+id: paragraph.stories_details.field_story_content
+field_name: field_story_content
+entity_type: paragraph
+bundle: stories_details
+label: 'Story Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,25 @@
+uuid: 22e9e1d8-05fc-4f64-b751-7b2f60b980ca
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:458a03f9-bfac-49cf-b680-dc9a79816b62'
+  module:
+    - block_content
+  theme:
+    - lhss_theme
+id: subscribe
+theme: lhss_theme
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:458a03f9-bfac-49cf-b680-dc9a79816b62'
+settings:
+  id: 'block_content:458a03f9-bfac-49cf-b680-dc9a79816b62'
+  label: Subscribe
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

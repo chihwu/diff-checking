@@ -1,0 +1,25 @@
+uuid: 2fb27514-11e1-4a55-a5e1-b05bf625a8e9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lhss_theme
+_core:
+  default_config_hash: DOAs1f5s2BjcmDLORCbvai-qJyv6QOCxByXqT-meDhQ
+id: lhss_theme_branding
+theme: lhss_theme
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

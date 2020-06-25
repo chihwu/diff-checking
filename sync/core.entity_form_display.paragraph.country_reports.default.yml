@@ -1,0 +1,34 @@
+uuid: 094299a4-dbbf-4b73-b9b0-f93b692d78d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.country_reports.field_reports_country_name
+    - field.field.paragraph.country_reports.field_reports_details
+    - paragraphs.paragraphs_type.country_reports
+  module:
+    - text
+id: paragraph.country_reports.default
+targetEntityType: paragraph
+bundle: country_reports
+mode: default
+content:
+  field_reports_country_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_reports_details:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

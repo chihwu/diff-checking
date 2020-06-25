@@ -1,0 +1,10 @@
+uuid: 1faaeebf-f527-47dd-a02f-23fb37f1d4a4
+langcode: en
+status: true
+dependencies: {  }
+id: stories_details
+label: 'Stories Details'
+icon_uuid: null
+icon_default: null
+description: 'This Paragraph type supports Story details page'
+behavior_plugins: {  }

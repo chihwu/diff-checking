@@ -1,0 +1,20 @@
+uuid: 33192103-2945-4d48-a3d2-e8cd12df6a29
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_reports_country_name
+field_name: field_reports_country_name
+entity_type: paragraph
+type: text
+settings:
+  max_length: 500
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

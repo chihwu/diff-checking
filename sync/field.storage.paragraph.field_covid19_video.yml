@@ -1,0 +1,20 @@
+uuid: ca2593c8-0bd4-4fa5-9e97-c21ecb79615e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_covid19_video
+field_name: field_covid19_video
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

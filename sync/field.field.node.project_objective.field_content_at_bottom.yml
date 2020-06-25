@@ -1,0 +1,23 @@
+uuid: ccf88bf5-64d9-4294-b217-fd8a7455226e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_at_bottom
+    - node.type.project_objective
+id: node.project_objective.field_content_at_bottom
+field_name: field_content_at_bottom
+entity_type: node
+bundle: project_objective
+label: 'Content at Bottom'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

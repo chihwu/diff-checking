@@ -1,0 +1,19 @@
+uuid: be61ca50-44c1-4e55-be11-8a764a952836
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ifp
+    - node.type.project_objectives
+id: node.project_objectives.field_ifp
+field_name: field_ifp
+entity_type: node
+bundle: project_objectives
+label: ifp
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

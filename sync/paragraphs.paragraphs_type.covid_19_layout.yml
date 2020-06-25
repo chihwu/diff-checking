@@ -1,0 +1,10 @@
+uuid: 2389baf4-6a1f-4b95-aa5e-966b9ebd6ace
+langcode: en
+status: true
+dependencies: {  }
+id: covid_19_layout
+label: 'Covid-19 layout'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

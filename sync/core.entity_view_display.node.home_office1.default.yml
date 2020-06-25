@@ -1,0 +1,55 @@
+uuid: 985a98c1-c978-4083-97c3-6e8d6818f3ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home_office1.field_homeofficel1
+    - field.field.node.home_office1.field_homeofficer1
+    - field.field.node.home_office1.field_homeofficet1
+    - image.style.medium
+    - node.type.home_office1
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.home_office1.default
+targetEntityType: node
+bundle: home_office1
+mode: default
+content:
+  field_homeofficel1:
+    weight: 103
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_homeofficer1:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_homeofficet1:
+    weight: 104
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

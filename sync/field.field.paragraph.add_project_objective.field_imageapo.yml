@@ -1,0 +1,21 @@
+uuid: d44edd8b-4b91-4444-a047-0fa01bd41fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imageapo
+    - paragraphs.paragraphs_type.add_project_objective
+  module:
+    - text
+id: paragraph.add_project_objective.field_imageapo
+field_name: field_imageapo
+entity_type: paragraph
+bundle: add_project_objective
+label: Textapo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

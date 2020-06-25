@@ -1,0 +1,90 @@
+uuid: 50800eb7-5b9a-4e53-a5d5-ed2b5d06bb6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.upcoming_events_list.body
+    - field.field.node.upcoming_events_list.field_event_
+    - field.field.node.upcoming_events_list.field_event_category
+    - field.field.node.upcoming_events_list.field_event_datetime
+    - field.field.node.upcoming_events_list.field_event_poster
+    - field.field.node.upcoming_events_list.field_event_register
+    - field.field.node.upcoming_events_list.field_event_summary
+    - field.field.node.upcoming_events_list.field_event_title
+    - node.type.upcoming_events_list
+  module:
+    - link
+    - media_library
+    - text
+id: node.upcoming_events_list.default
+targetEntityType: node
+bundle: upcoming_events_list
+mode: default
+content:
+  field_event_:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_event_category:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_event_datetime:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_event_poster:
+    type: media_library_widget
+    weight: 2
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_event_register:
+    weight: 6
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_event_summary:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_event_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

@@ -1,0 +1,27 @@
+uuid: 7cb960de-54ba-42ee-b908-96ad5c3509e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - lhss_theme
+_core:
+  default_config_hash: bxR4G_m0PYMmxsXx92hFngvoj61LkA3gZibwb2S_Hp4
+id: lhss_theme_main_menu
+theme: lhss_theme
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }
